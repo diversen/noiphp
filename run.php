@@ -11,7 +11,7 @@ include_once "coslib/log.php";
 
 log::createLog();
 
-$config_file = _COS_PATH . '/config.php';
+$config_file = _COS_PATH . '/config/config.php';
 config::loadPHPConfigFile($config_file);
 
 
