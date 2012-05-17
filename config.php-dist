@@ -1,0 +1,12 @@
+<?php
+
+$config = array (
+    // single or comma seperated list
+    'my_hostnames' => 'dbi.no-ip.org',
+    // your no ip email
+    'email' => 'email@gmail.com',
+    // your no ip password
+    'password' => 'password',
+    // end point for api call - remove 's' from http is your curl does not support it
+    'api_url' => 'https://dynupdate.no-ip.com/nic/update'
+);
