@@ -1,4 +1,4 @@
-PHP client for the no-ip.com API for auto update a DNS server point to shifting or dynamic IP.
+PHP client for the no-ip.com API for auto update a no-ip DNS server to point to a dynamic IP.
 
 Setup, and usage. See: 
 
