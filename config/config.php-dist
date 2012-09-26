@@ -7,6 +7,7 @@ $config = array (
     'email' => 'email@gmail.com',
     // your no ip password
     'password' => 'password',
-    // end point for api call - remove 's' from http is your curl does not support it
-    'api_url' => 'https://dynupdate.no-ip.com/nic/update'
+    // end point for api call - you can add 's' to http is your curl support it
+    // Not working with PHP 5.3.10-1ubuntu3.4  and curl extension
+    'api_url' => 'http://dynupdate.no-ip.com/nic/update'
 );
