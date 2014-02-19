@@ -15,8 +15,12 @@ log::createLog();
 $config_file = _COS_PATH . '/config/config.php';
 config::loadPHPConfigFile($config_file);
 
-// simple api for getting ip. 
-$my_ip = @file_get_contents(config::getMainIni('api_ip'));
+// simple api for getting ip.
+$api_ip = config::getMainIni('api_ip');
+if (!$api_ip) {
+    $api_ip = 'http://www.os-cms.net/api/your_addr.php';
+}
+$my_ip = @file_get_contents($api_ip);
 if ($my_ip === false) {
     log::message("Could not get your public IP. No check of current DNS settings");
     return;
