@@ -9,5 +9,7 @@ $config = array (
     'password' => 'password',
     // end point for api call - you can add 's' to http is your curl support it
     // Not working with PHP 5.3.10-1ubuntu3.4  and curl extension
-    'api_url' => 'http://dynupdate.no-ip.com/nic/update'
+    'api_url' => 'http://dynupdate.no-ip.com/nic/update',
+    // as we use a log with date we need a date format
+    'date_format_long' => "%d-%b-%Y %T"
 );
