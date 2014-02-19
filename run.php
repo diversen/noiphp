@@ -48,5 +48,5 @@ $curl->setUserAgent($user_agent);
 $curl->createCurl();
 
 $result = $curl->getWebPage();
-log::message($result);
+log::error($result);
 die;
