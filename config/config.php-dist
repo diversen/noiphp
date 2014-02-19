@@ -8,8 +8,13 @@ $config = array (
     // your no ip password
     'password' => 'password',
     // end point for api call - you can add 's' to http is your curl support it
-    // Not working with PHP 5.3.10-1ubuntu3.4  and curl extension
+    // Not working with PHP 5.3.10-1ubuntu3.4 and curl extension
     'api_url' => 'http://dynupdate.no-ip.com/nic/update',
+    // some sort of api which gives the client the current ip
+    // used for telling the no-ip what is the current IP
+    // the url below just echos the clients current ip
+    // The IP is then curled to the no ip service
+    'api_ip' => 'http://www.os-cms.net/api/your_addr.php',
     // as we use a log with date we need a date format
-    'date_format_long' => "%d-%b-%Y %T"
+    'date_format_long' => "%d-%b-%Y %T",
 );
