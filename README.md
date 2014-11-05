@@ -6,6 +6,10 @@ http://www.os-cms.net/blog/view/21/NO-IP-client-written-in-PHP
 
 ## Changelog: 
 
+### v0.0.4
+
+Fix log of error
+
 ### v0.0.3
 
     'api_ip' => 'http://www.os-cms.net/api/your_addr.php',
