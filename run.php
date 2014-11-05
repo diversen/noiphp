@@ -22,12 +22,12 @@ if (!$api_ip) {
 }
 $my_ip = @file_get_contents($api_ip);
 if ($my_ip === false) {
-    log::message("Could not get your public IP. No check of current DNS settings");
+    log::error("Could not get your public IP. No check of current DNS settings");
     return;
 }
 
 if (!IP::isPublic($my_ip)) {
-    log::message("IP $my_ip is not public");
+    log::error("IP $my_ip is not public");
 }
 
 $my_ip = trim($my_ip);
