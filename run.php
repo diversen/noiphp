@@ -18,7 +18,7 @@ config::loadPHPConfigFile($config_file);
 // simple api for getting ip.
 $api_ip = config::getMainIni('api_ip');
 if (!$api_ip) {
-    $api_ip = 'http://www.os-cms.net/api/your_addr.php';
+    $api_ip = 'https://api.10kilobyte.com/my_ip.php';
 }
 $my_ip = @file_get_contents($api_ip);
 if ($my_ip === false) {

@@ -2,7 +2,7 @@ PHP client for the no-ip.com API for auto update a no-ip DNS server to point to 
 
 Setup, and usage. See: 
 
-http://www.os-cms.net/blog/view/21/NO-IP-client-written-in-PHP
+https://blog.10kilobyte.com/blog/view/21/NO-IP-client-written-in-PHP
 
 ## Changelog: 
 
